@@ -1,0 +1,128 @@
+﻿
+> profit-lab@0.1.0 build
+> next build
+
+   ??Next.js 16.0.3 (Turbopack)
+
+   Creating an optimized production build ...
+node.exe : 
+위치 C:\Program Files\nodejs\np
+m.ps1:29 문자:3
++   & $NODE_EXE $NPM_CLI_JS $
+args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~
+    + CategoryInfo           
+   : NotSpecified: (:String  
+  ) [], RemoteException
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+> Build error occurred
+Error: Turbopack build failed
+ with 1 errors:
+./src/components/calculator/C
+ompareView.tsx:9:1
+Module not found: Can't resol
+ve '@/lib/calculator'
+[0m [90m  7 |[39m [36mimp
+ort[39m [33mInputSection[3
+9m [36mfrom[39m [32m"./Inp
+utSection"[39m[33m;[39m
+ [90m  8 |[39m [36mimport
+[39m [33mResultSection[39m 
+[36mfrom[39m [32m"./Result
+Section"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  9 
+|[39m [36mimport[39m { cal
+culateMargin } [36mfrom[39m
+ [32m"@/lib/calculator"[39m
+[33m;[39m
+ [90m    |[39m [31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m
+ [90m 10 |[39m [36mimport
+[39m { [33mArrowRightLeft[3
+9m } [36mfrom[39m [32m"luc
+ide-react"[39m[33m;[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [36mconst[
+39m [33mINITIAL_STATE[39m[
+33m:[39m [33mCalculatorStat
+e[39m [33m=[39m {[0m
+
+Import map: aliased to relati
+ve './src/lib/calculator' ins
+ide of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/calculat
+or/CompareView.tsx [Client Co
+mponent Browser]
+    ./src/components/calculat
+or/Calculator.tsx [Client Com
+ponent Browser]
+    ./src/components/calculat
+or/Calculator.tsx [Server Com
+ponent]
+    ./src/app/page.tsx [Serve
+r Component]
+
+  Client Component SSR:
+    ./src/components/calculat
+or/CompareView.tsx [Client Co
+mponent SSR]
+    ./src/components/calculat
+or/Calculator.tsx [Client Com
+ponent SSR]
+    ./src/components/calculat
+or/Calculator.tsx [Server Com
+ponent]
+    ./src/app/page.tsx [Serve
+r Component]
+
+https://nextjs.org/docs/messa
+ges/module-not-found
+
+
+    at <unknown> (./src/compo
+nents/calculator/CompareView.
+tsx:9:1)
+    at <unknown> (https://nex
+tjs.org/docs/messages/module-
+not-found)
