@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import RelatedTools from "@/components/shared/RelatedTools";
+import ToolContent from "@/components/shared/ToolContent";
 import { RotateCcw } from "lucide-react";
 
 export default function CbmCalculatorPage() {
