@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import AppLayout from "@/components/layout/AppLayout";
 import { Toaster } from "sonner";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sellerfit.kr'),
+  metadataBase: new URL('https://sellerpit.kr'),
   title: {
     default: "Seller Fit - 셀러핏 | 온라인 셀러를 위한 스마트 마진 계산기",
     template: "%s | Seller Fit"
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "ko_KR",
-    url: "https://sellerfit.kr",
+    url: "https://sellerpit.kr",
     siteName: "Seller Fit",
     title: "Seller Fit - 온라인 셀러를 위한 스마트 마진 계산기",
     description: "스마트스토어, 쿠팡 등 온라인 셀러를 위한 무료 마진 계산, 비교 분석, 수익 기록 도구",
@@ -72,12 +73,10 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // Google Search Console 인증 코드 (실제 배포 시 추가)
-    // google: 'your-google-verification-code',
-    // Naver Search Advisor 인증 코드 (실제 배포 시 추가)
-    // other: {
-    //     'naver-site-verification': 'your-naver-verification-code',
-    // },
+    google: 'E6rfB6XCmAA7BHxdwvzmBGDwSIXp5WKXqqqNSoDVzjw',
+    other: {
+      'naver-site-verification': 'edf7dc5b4e852efbd523a6f4d54ce14a1881950f',
+    },
   },
 };
 
@@ -91,6 +90,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans bg-slate-50 text-slate-900 antialiased selection:bg-indigo-100`}
       >
+        {/* Google AdSense */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3050601904412736"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+
         <AppLayout>
           {children}
         </AppLayout>

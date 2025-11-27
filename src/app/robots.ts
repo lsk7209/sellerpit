@@ -1,7 +1,9 @@
 import { MetadataRoute } from 'next';
 
+export const dynamic = 'force-static';
+
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = 'https://sellerfit.kr'; // 실제 도메인으로 변경 필요
+    const baseUrl = 'https://sellerpit.kr';
 
     return {
         rules: [

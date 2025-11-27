@@ -1,6 +1,8 @@
-# Seller Fit (셀러핏)
+# Seller Pit (셀러핏)
 
 온라인 셀러를 위한 스마트 마진 계산기 및 비즈니스 유틸리티 모음
+
+🌐 **Live Site**: [https://sellerpit.kr](https://sellerpit.kr)
 
 ## 🚀 주요 기능
 
@@ -26,23 +28,33 @@
 
 ## 🛠 기술 스택
 
-- **Framework**: Next.js 16.0.3 (App Router)
+- **Framework**: Next.js 16.0.3 (App Router, Static Export)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS 4
-- **UI Components**: Lucide React Icons
+- **UI Components**: Radix UI + Lucide React Icons
 - **Charts**: Recharts
-- **Deployment**: Cloudflare Pages
+- **Deployment**: Cloudflare Pages (GitHub Actions 자동배포)
 
-## 🎯 SEO 최적화
+## 🎯 SEO & 수익화
 
+### SEO 최적화 ✅
 - ✅ 페이지별 Meta Title/Description
 - ✅ Canonical URL 설정
 - ✅ Structured Data (JSON-LD FAQPage)
-- ✅ Sitemap.xml 자동 생성
-- ✅ RSS Feed 제공
-- ✅ Robots.txt 설정
+- ✅ **Sitemap.xml** ([https://sellerpit.kr/sitemap.xml](https://sellerpit.kr/sitemap.xml))
+- ✅ **RSS Feed** ([https://sellerpit.kr/feed.xml](https://sellerpit.kr/feed.xml))
+- ✅ **Robots.txt** ([https://sellerpit.kr/robots.txt](https://sellerpit.kr/robots.txt))
 - ✅ H1-H3 계층 구조
 - ✅ 모바일 반응형 디자인
+
+### 검색엔진 인증 ✅
+- ✅ Google Search Console 인증 완료
+- ✅ Naver 웹마스터 인증 완료
+
+### 수익화 ✅
+- ✅ Google AdSense 스크립트 통합
+- ✅ **ads.txt** ([https://sellerpit.kr/ads.txt](https://sellerpit.kr/ads.txt))
+- ⏳ AdSense 승인 대기 중
 
 ## 📦 설치 및 실행
 
@@ -56,19 +68,40 @@ npm run dev
 # 프로덕션 빌드
 npm run build
 
-# 프로덕션 서버 실행
-npm start
+# 빌드 결과 확인 (out/ 디렉터리)
 ```
 
-## 🌐 배포
+## 🚀 배포
 
-Cloudflare Pages에 최적화되어 있습니다.
+### 자동 배포 (GitHub Actions)
+`main` 또는 `master` 브랜치에 push하면 자동으로 Cloudflare Pages에 배포됩니다.
 
 ```bash
-# Cloudflare Pages 배포
-npm run build
-# dist 폴더를 Cloudflare Pages에 업로드
+git add .
+git commit -m "feat: 새로운 기능 추가"
+git push origin main
 ```
+
+### 수동 배포
+```bash
+npm run build
+# out/ 폴더를 Cloudflare Pages에 업로드
+```
+
+## 📚 문서
+
+- **[SEO_DEPLOYMENT_SUMMARY.md](./SEO_DEPLOYMENT_SUMMARY.md)** - SEO 및 배포 설정 완료 보고서
+- **[DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md)** - 상세 배포 가이드
+
+## 🔗 주요 URL
+
+| 항목 | URL |
+|------|-----|
+| 메인 사이트 | https://sellerpit.kr |
+| 사이트맵 | https://sellerpit.kr/sitemap.xml |
+| RSS 피드 | https://sellerpit.kr/feed.xml |
+| Robots.txt | https://sellerpit.kr/robots.txt |
+| ads.txt | https://sellerpit.kr/ads.txt |
 
 ## 📄 라이선스
 
@@ -80,9 +113,9 @@ MIT License
 
 ## 📞 문의
 
-- Website: https://sellerfit.kr
-- Email: contact@sellerfit.kr
+- Website: https://sellerpit.kr
+- Email: contact@sellerpit.kr
 
 ---
 
-**Seller Fit** - 온라인 셀러의 성공을 위한 필수 도구
+**Seller Pit** - 온라인 셀러의 성공을 위한 필수 도구
