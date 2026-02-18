@@ -8,9 +8,9 @@ export default function Home() {
     "@graph": [
       {
         "@type": "WebApplication",
-        "name": "Seller Fit",
+        "name": "Seller Pit",
         "alternateName": "셀러핏",
-        "url": "https://sellerfit.kr",
+        "url": "https://sellerpit.kr",
         "description": "온라인 셀러를 위한 무료 마진 계산기. 스마트스토어, 쿠팡 등 다양한 플랫폼의 수수료를 고려한 정확한 수익 계산",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web Browser",
@@ -29,12 +29,12 @@ export default function Home() {
       },
       {
         "@type": "Organization",
-        "name": "Seller Fit",
-        "url": "https://sellerfit.kr",
-        "logo": "https://sellerfit.kr/logo.png",
+        "name": "Seller Pit",
+        "url": "https://sellerpit.kr",
+        "logo": "https://sellerpit.kr/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
-          "email": "contact@sellerfit.kr",
+          "email": "contact@sellerpit.kr",
           "contactType": "customer service"
         }
       },

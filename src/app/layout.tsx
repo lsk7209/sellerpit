@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://sellerpit.kr'),
   title: {
-    default: "Seller Fit - 셀러핏 | 온라인 셀러를 위한 스마트 마진 계산기",
-    template: "%s | Seller Fit"
+    default: "Seller Pit - 셀러핏 | 온라인 셀러를 위한 스마트 마진 계산기",
+    template: "%s | Seller Pit"
   },
   description: "스마트스토어, 쿠팡, 11번가 등 온라인 셀러를 위한 무료 마진 계산기. 실시간 순수익 계산, 상품 비교, 부가세 자동 계산, CBM 계산까지. 정확한 수익 분석으로 성공적인 온라인 판매를 시작하세요.",
   keywords: [
@@ -28,36 +28,36 @@ export const metadata: Metadata = {
     "이커머스", "온라인판매", "소싱계산", "수익성분석", "상품비교",
     "네이버스마트스토어", "쿠팡파트너스", "11번가", "지마켓", "옥션"
   ],
-  authors: [{ name: "Seller Fit Team" }],
-  creator: "Seller Fit",
-  publisher: "Seller Fit",
+  authors: [{ name: "Seller Pit Team" }],
+  creator: "Seller Pit",
+  publisher: "Seller Pit",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   alternates: {
-    canonical: './',
+    canonical: '/',
   },
   openGraph: {
     type: "website",
     locale: "ko_KR",
     url: "https://sellerpit.kr",
-    siteName: "Seller Fit",
-    title: "Seller Fit - 온라인 셀러를 위한 스마트 마진 계산기",
+    siteName: "Seller Pit",
+    title: "Seller Pit - 온라인 셀러를 위한 스마트 마진 계산기",
     description: "스마트스토어, 쿠팡 등 온라인 셀러를 위한 무료 마진 계산, 비교 분석, 수익 기록 도구",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Seller Fit - 셀러핏 마진 계산기",
+        alt: "Seller Pit - 셀러핏 마진 계산기",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Seller Fit - 온라인 셀러를 위한 스마트 마진 계산기",
+    title: "Seller Pit - 온라인 셀러를 위한 스마트 마진 계산기",
     description: "무료 마진 계산, 상품 비교, 부가세 자동 계산. 온라인 셀러의 필수 도구",
     images: ["/og-image.png"],
   },

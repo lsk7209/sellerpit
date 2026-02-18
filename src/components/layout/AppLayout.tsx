@@ -63,9 +63,9 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     const [isMobileOpen, setIsMobileOpen] = useState(false);
 
     return (
-        <div className="min-h-screen bg-slate-950 flex flex-col md:flex-row">
+        <div className="min-h-screen bg-slate-950">
             {/* Desktop Sidebar */}
-            <aside className="hidden md:flex w-64 flex-col bg-slate-900 text-slate-200 border-r border-slate-800">
+            <aside className="hidden md:flex md:fixed md:inset-y-0 md:left-0 md:z-40 w-64 flex-col bg-slate-900 text-slate-200 border-r border-slate-800">
                 <div className="p-4 flex items-center gap-2 border-b border-slate-800">
                     <div className="bg-indigo-600 p-1.5 rounded-lg">
                         <TrendingUp className="w-5 h-5 text-white" />
@@ -113,20 +113,20 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             </aside>
 
             {/* Mobile Header */}
-            <div className="md:hidden flex items-center justify-between p-4 bg-slate-900 border-b border-slate-800 text-slate-200">
+            <div className="md:hidden sticky top-0 z-40 flex items-center justify-between px-4 py-3 bg-slate-900/95 backdrop-blur border-b border-slate-800 text-slate-200">
                 <div className="flex items-center gap-2">
                     <div className="bg-indigo-600 p-1.5 rounded-lg">
                         <TrendingUp className="w-5 h-5 text-white" />
                     </div>
-                    <span className="text-lg font-bold">Seller Fit</span>
+                    <span className="text-base font-bold">Seller Fit</span>
                 </div>
                 <Sheet open={isMobileOpen} onOpenChange={setIsMobileOpen}>
                     <SheetTrigger asChild>
-                        <Button variant="ghost" size="icon" className="text-slate-200">
+                        <Button variant="ghost" size="icon" className="text-slate-200 h-9 w-9">
                             <Menu className="w-6 h-6" />
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="left" className="w-64 bg-slate-900 text-slate-200 p-0">
+                    <SheetContent side="left" className="w-[85vw] max-w-xs bg-slate-900 text-slate-200 p-0">
                         <div className="p-4 flex items-center gap-2 border-b border-slate-800">
                             <div className="bg-indigo-600 p-1.5 rounded-lg">
                                 <TrendingUp className="w-5 h-5 text-white" />
@@ -175,7 +175,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             </div>
 
             {/* Main Content */}
-            <main className="flex-1 pt-4 md:pt-0 md:ml-64 p-4 md:p-8 bg-slate-950 text-slate-200 overflow-y-auto">
+            <main className="min-h-screen pt-4 pb-24 md:pt-0 md:pb-8 md:ml-64 p-4 md:p-8 bg-slate-950 text-slate-200">
                 {children}
             </main>
 
