@@ -32,20 +32,20 @@ export default function RelatedTools({ currentPath }: { currentPath?: string }) 
         .slice(0, 3);
 
     return (
-        <div className="mt-12 border-t border-slate-800 pt-8">
-            <h3 className="text-xl font-bold text-slate-200 mb-4">함께 쓰면 좋은 도구</h3>
-            <div className="grid gap-4 md:grid-cols-3">
+        <div className="mt-10 border-t border-slate-800 pt-6 md:mt-12 md:pt-8">
+            <h3 className="text-lg md:text-xl font-bold text-slate-200 mb-4">함께 쓰면 좋은 도구</h3>
+            <div className="grid gap-3 sm:gap-4 sm:grid-cols-2 xl:grid-cols-3">
                 {suggestions.map((tool) => (
                     <Link
                         key={tool.href}
                         href={tool.href}
-                        className="group block p-4 bg-slate-900 rounded-lg border border-slate-800 hover:border-indigo-500 transition-all"
+                        className="group block p-3 sm:p-4 bg-slate-900 rounded-lg border border-slate-800 hover:border-indigo-500 transition-all"
                     >
                         <div className="flex justify-between items-start mb-2">
-                            <h4 className="font-bold text-indigo-400 group-hover:text-indigo-300">{tool.label}</h4>
+                            <h4 className="font-bold text-sm sm:text-base text-indigo-400 group-hover:text-indigo-300">{tool.label}</h4>
                             <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-indigo-400 transition-colors" />
                         </div>
-                        <p className="text-sm text-slate-400 line-clamp-2">{tool.desc}</p>
+                        <p className="text-xs sm:text-sm text-slate-400 line-clamp-2">{tool.desc}</p>
                     </Link>
                 ))}
             </div>
